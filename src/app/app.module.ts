@@ -3,15 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MyModuleModule } from './modules/my-module/my-module.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngularHelperModule } from 'angular-helper';
 
 @NgModule({
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MyModuleModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AngularHelperModule
   ],
   declarations: [
     AppComponent

@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { RouteInfo } from './modules/my-module/components/route-menu/RouteInfo.model';
-import { RouteMenuComponent } from './modules/my-module/components/route-menu/route-menu.component';
+import { RouterModule } from '@angular/router';
+import { RouteInfo, RouteMenuComponent } from 'angular-helper';
 
 const routes: RouteInfo[] = [
   {
