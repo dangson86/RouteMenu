@@ -1,0 +1,12 @@
+<div class="componentCard">
+  <div class="menuWrapper">
+    <a mat-raised-button color="primary" class="menuItem" *ngFor="let routeInfo of childrenRoutes"
+      [routerLink]="[routeInfo.path]">
+      <mat-icon *ngIf="routeInfo.iconName" class="menuIcon">{{routeInfo.iconName}}</mat-icon>
+      <span class="menuText">{{routeInfo.displayName}}</span>
+    </a>
+  </div>
+  <div class="contentWrapper" *ngIf="includeOutlet">
+    <router-outlet></router-outlet>
+  </div>
+</div>
